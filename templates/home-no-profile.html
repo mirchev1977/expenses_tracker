@@ -18,7 +18,7 @@
         
 <h1>Enter your data</h1>
 <div class="form">
-    <form method="POST" action="{% url 'index' %}">
+    <form method="POST" action="{% url 'create profile' %}">
         {{ form }}
         {% csrf_token %}
         <input type="submit" value="Submit">
