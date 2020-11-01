@@ -7,6 +7,6 @@ from app.views.profiles import create_profile
 
 def index(request):
     if Profile.objects.exists():
-        return render(request, 'home-no-profile.html')
+        return render(request, 'home-with-profile.html')
     else:
         return create_profile(request);
