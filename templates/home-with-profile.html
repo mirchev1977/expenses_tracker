@@ -17,22 +17,23 @@
     </ul>
 </nav>
     <div class="body">
-        
 
-<div>
-    <h1>Summary</h1><h1>
-    <ul class="expenses-list">
-    <li class="blue">1500$</li>
-    
-        <li class="red"> - 1000.0$</li>
-    
-        <li class="red"> - 400.0$</li>
-    
-    <li class="green">= 100.0$ left</li>
-    </ul>
-</h1></div>
 
-<h1>My Expenses</h1>
+{% if expenses %}
+    <div>
+        <h1>Summary</h1><h1>
+        <ul class="expenses-list">
+        <li class="blue">1500$</li>
+
+            <li class="red"> - 1000.0$</li>
+
+            <li class="red"> - 400.0$</li>
+
+        <li class="green">= 100.0$ left</li>
+        </ul>
+    </h1></div>
+{% endif %}
+    <h1>My Expenses</h1>
 <a href="/create">Add Expense</a>
 <div class="expenses-container">
 {% for expense in expenses %}
